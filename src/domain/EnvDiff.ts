@@ -10,7 +10,7 @@ function normalizeKey(key: string): string {
     return key.trim();
 };
 
-function uniqueSorted(keys: string[]): string[] {
+export function uniqueSorted(keys: string[]): string[] {
     return Array.from(new Set(keys.map(normalizeKey).filter(Boolean))).sort();
 };
 
